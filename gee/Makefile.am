@@ -147,13 +147,13 @@ dist_vapi_DATA = \
 	$(NULL)
 
 if HAVE_INTROSPECTION
-girdir = @INTROSPECTION_GIRDIR@
+girdir = $(prefix)/@INTROSPECTION_GIRDIR@
 
 dist_gir_DATA = \
 	Gee-0.8.gir \
 	$(NULL)
 
-typelibdir = @INTROSPECTION_TYPELIBDIR@
+typelibdir = $(prefix)/@INTROSPECTION_TYPELIBDIR@
 typelib_DATA = \
 	Gee-0.8.typelib \
 	$(NULL)
